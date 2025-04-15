@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+ 
+    width: 4rem;
+     height: 3px;
+     background:
+      linear-gradient(#F2A531 0 0) 0/0% no-repeat
+      #ddd;
+     animation: l1 15s infinite linear;
+   }
+   @keyframes l1 {
+       100% {background-size:100%}
+   }
+   .fakeloader {
+    
+    width: 4rem;
+     height: 3px;
+     background:
+    
+      #ddd;
+     
+   }
+   .custom-shadow {
+    box-shadow: 0px 8px 50px 0px rgba(69, 69, 69, 0.07);
+  }
+  
