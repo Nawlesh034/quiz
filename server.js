@@ -16,6 +16,6 @@ server.use((err, req, res, next) => {
 server.use(router);
 
 // Vercel assigns the port dynamically, so we use process.env.PORT
-server.listen(process.env.PORT || 3000, () => {
+server.listen(process.env.PORT || 8000, () => {
   console.log('JSON Server is running');
 });
