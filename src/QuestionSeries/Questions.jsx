@@ -12,7 +12,7 @@ function Questions() {
   const [usedOptions, setUsedOptions] = useState(new Set());
 
   useEffect(() => {
-    fetch('/api.json')
+    fetch('http://localhost:8000/data')
       .then((res) => res.json())
       .then((data) => {
         const q = data.questions;
