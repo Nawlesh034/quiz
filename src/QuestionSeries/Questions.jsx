@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Progress from './Progress';
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Questions() {
   const [questions, setQuestions] = useState([]);
@@ -12,7 +13,7 @@ function Questions() {
   const [usedOptions, setUsedOptions] = useState(new Set());
 
   useEffect(() => {
-    fetch('https://quiz-v68q.onrender.com/data')
+    fetch(`${API_URL}/data`)
       .then((res) => res.json())
       .then((data) => {
         const q = data.questions;
