@@ -1,9 +1,13 @@
 {
-    "rewrites": [
-      {
-        "source": "/data",
-        "destination": "/api/data.js"
-      }
-    ]
-  }
-  
+  "functions": {
+    "api/data.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/data",
+      "destination": "/api/data.js"
+    }
+  ]
+}
