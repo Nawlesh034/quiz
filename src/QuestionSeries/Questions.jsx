@@ -12,7 +12,7 @@ function Questions() {
   const [usedOptions, setUsedOptions] = useState(new Set());
 
   useEffect(() => {
-    fetch('https://json-server-quiz.onrender.com/questions')
+    fetch('https://quiz-v68q.onrender.com/questions')
       .then((res) => res.json())
       .then((data) => {
         const q = data.questions;
