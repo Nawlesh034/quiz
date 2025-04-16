@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Progress from './Progress';
 const API_URL = import.meta.env.VITE_API_URL;
+console.log(API_URL)
 
 function Questions() {
   const [questions, setQuestions] = useState([]);
